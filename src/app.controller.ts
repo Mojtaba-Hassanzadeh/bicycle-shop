@@ -7,8 +7,8 @@ import { join } from 'path';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get()
+  @Get('/')
   async homePage(@Req() req: Request, @Res() res: Response) {
-    res.sendFile(join(process.cwd() + '/views/bicycles.html'));
+    return res.send('HelloAryan');
   }
 }
