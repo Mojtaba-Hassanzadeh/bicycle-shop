@@ -1,0 +1,3 @@
+class FindBicycleByIdInput {
+  id: number;
+}
